@@ -1,0 +1,27 @@
+{
+  "name": "trainingDoc",
+  "plural": "trainingDocs",
+  "base": "PersistedModel",
+  "strict": false,
+  "idInjection": false,
+  "properties": {
+    "classifier": {
+      "type": "string",
+      "id": true,
+      "required": true,
+      "index": true
+    },
+    "phrase": {
+      "type": "string",
+      "required": true
+    },
+    "value": {
+      "type": "string",
+      "required": true
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": []
+}
