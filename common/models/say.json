@@ -1,0 +1,20 @@
+{
+  "name": "say",
+  "plural": "says",
+  "base": "Model",
+  "properties": {
+    "msg": {
+      "type": "string",
+      "required": false
+    },
+    "params": {
+      "type": [
+        "any"
+      ]
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": []
+}

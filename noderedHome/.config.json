@@ -1,0 +1,449 @@
+{
+ "nodes": {
+  "8c2144ad28bbc44daefb01588c55b432989607cd": {
+   "name": "72-sentiment.js",
+   "types": [
+    "sentiment"
+   ],
+   "enabled": true
+  },
+  "0b21fc28e74e470fbdf91c36416ca8454f5a3a60": {
+   "name": "20-inject.js",
+   "types": [
+    "inject"
+   ],
+   "enabled": true
+  },
+  "0f6821b64004776ce3616b7f09df3b4a856ce88b": {
+   "name": "58-debug.js",
+   "types": [
+    "debug"
+   ],
+   "enabled": true
+  },
+  "90ae59cfc9b68eeb445bd4b96595e5d883e0e18f": {
+   "name": "75-exec.js",
+   "types": [
+    "exec"
+   ],
+   "enabled": true
+  },
+  "02a80e962eb587d24254a33b7866afc71557a408": {
+   "name": "80-function.js",
+   "types": [
+    "function"
+   ],
+   "enabled": true
+  },
+  "6b5881fc630d6585e0496d6fa4961016228e60aa": {
+   "name": "80-template.js",
+   "types": [
+    "template"
+   ],
+   "enabled": true
+  },
+  "de146e0c6e0fa0971a2ec2db3abb4b5c24719fbb": {
+   "name": "89-delay.js",
+   "types": [
+    "delay"
+   ],
+   "enabled": true
+  },
+  "2270964091dd460b547157e87007d1e6ee9ac2aa": {
+   "name": "89-trigger.js",
+   "types": [
+    "trigger"
+   ],
+   "enabled": true
+  },
+  "8295978b57ae259e4c81a7212aae08b777e993b2": {
+   "name": "90-comment.js",
+   "types": [
+    "comment"
+   ],
+   "enabled": true
+  },
+  "5f0028431846729123774375abc4cd4e55ef1286": {
+   "name": "98-unknown.js",
+   "types": [
+    "unknown"
+   ],
+   "enabled": true
+  },
+  "38c5dab9c1801807626f80bf4bee02962a7facbd": {
+   "name": "61-imap.js",
+   "types": [
+    "imap"
+   ],
+   "enabled": true
+  },
+  "8402303532109c3dc19ed1487dcb8ef1c25a3ed6": {
+   "name": "73-parsexml.js",
+   "types": [
+    "xml2js"
+   ],
+   "enabled": true
+  },
+  "534889d4f6e44aa14976ec7097d9d8ebc4eafae6": {
+   "name": "74-js2xml.js",
+   "types": [
+    "json2xml"
+   ],
+   "enabled": true
+  },
+  "a9b8725942547f8ec708c4060570d93a199b2d4a": {
+   "name": "90-httpget.js",
+   "types": [
+    "httpget"
+   ],
+   "enabled": true
+  },
+  "8f3594ad91bdb2bacf8e192f8ac163b165e2fcfa": {
+   "name": "35-arduino.js",
+   "types": [
+    "arduino in",
+    "arduino out",
+    "arduino-board"
+   ],
+   "enabled": true
+  },
+  "878cef7139518cec3df5bb31fdf3ceea1c2ce4f3": {
+   "name": "36-rpi-gpio.js",
+   "types": [
+    "rpi-gpio in",
+    "rpi-gpio out"
+   ],
+   "enabled": true
+  },
+  "d57ad64da8cf7a1e0b9ee7cc2003e22ac8b43645": {
+   "name": "10-mqtt.js",
+   "types": [
+    "mqtt in",
+    "mqtt out",
+    "mqtt-broker"
+   ],
+   "enabled": true
+  },
+  "1dd5eb0c2801e91ff4ef72dc49b40752676f560e": {
+   "name": "21-httpin.js",
+   "types": [
+    "http in",
+    "http response",
+    "http request"
+   ],
+   "enabled": true
+  },
+  "d0c9123043ac618e270e0841588908d73b8c2018": {
+   "name": "22-websocket.js",
+   "types": [
+    "websocket in",
+    "websocket out",
+    "websocket-listener"
+   ],
+   "enabled": true
+  },
+  "918a41227ea7b34a44b8c154de3f398b9d4ea4e4": {
+   "name": "23-watch.js",
+   "types": [
+    "watch"
+   ],
+   "enabled": true
+  },
+  "971f09c5005703e75990c8212d4ee98d47800afd": {
+   "name": "25-serial.js",
+   "types": [
+    "serial in",
+    "serial out",
+    "serial-port"
+   ],
+   "enabled": true
+  },
+  "ecb725fa5610dd2d8caeb47d156ad0b897fc8fcc": {
+   "name": "31-tcpin.js",
+   "types": [
+    "tcp in",
+    "tcp out",
+    "tcp request"
+   ],
+   "enabled": true
+  },
+  "ae439c5dd1adb5d2156053ce67c81971f57d2d75": {
+   "name": "32-udp.js",
+   "types": [
+    "udp in",
+    "udp out"
+   ],
+   "enabled": true
+  },
+  "d451054b2bea0ea1ec96e4d06f3dd1345385ab19": {
+   "name": "10-switch.js",
+   "types": [
+    "switch"
+   ],
+   "enabled": true
+  },
+  "23e437121c8581510b1993abefbec05b422b06f5": {
+   "name": "15-change.js",
+   "types": [
+    "change"
+   ],
+   "enabled": true
+  },
+  "d0f4efbec6381283d7fc1b6e636b2427d95d60ba": {
+   "name": "16-range.js",
+   "types": [
+    "range"
+   ],
+   "enabled": true
+  },
+  "a07188fe59a70d60fb96f1574540c20bccbb90fa": {
+   "name": "70-CSV.js",
+   "types": [
+    "csv"
+   ],
+   "enabled": true
+  },
+  "6fb54f8bd2dd1e7ff2ca9422a01cae231740547f": {
+   "name": "70-HTML.js",
+   "types": [
+    "html"
+   ],
+   "enabled": true
+  },
+  "a1cecef70e8e58f20df837f6d6f2e7e771b69ae3": {
+   "name": "70-JSON.js",
+   "types": [
+    "json"
+   ],
+   "enabled": true
+  },
+  "3627b3cdcc6e2de0b92af80ec813642078242df1": {
+   "name": "70-XML.js",
+   "types": [
+    "xml"
+   ],
+   "enabled": true
+  },
+  "fcccbf3a862218c8142d0b15ba081bccbc144da4": {
+   "name": "27-twitter.js",
+   "types": [
+    "twitter-credentials",
+    "twitter in",
+    "twitter out"
+   ],
+   "enabled": true
+  },
+  "0decc19bc1d77899016c4a06695d8ca27f6e119a": {
+   "name": "32-feedparse.js",
+   "types": [
+    "feedparse"
+   ],
+   "enabled": true
+  },
+  "b4489afeb1097dfdf79d48f2efe6dee61ade9b9d": {
+   "name": "61-email.js",
+   "types": [
+    "e-mail",
+    "e-mail in"
+   ],
+   "enabled": true
+  },
+  "b4a92160e221d4dae299aeaacff1bf7b9256f522": {
+   "name": "91-irc.js",
+   "types": [
+    "irc in",
+    "irc out",
+    "irc-server"
+   ],
+   "enabled": true
+  },
+  "c8473ca86ab9893e08f6a2a426c524336ff69dbd": {
+   "name": "28-tail.js",
+   "types": [
+    "tail"
+   ],
+   "enabled": true
+  },
+  "2be6d94a5824610938f5ea780f9779ff128ccd4f": {
+   "name": "50-file.js",
+   "types": [
+    "file",
+    "file in"
+   ],
+   "enabled": true
+  },
+  "0e7a56556038639020498b54a4092ecf40686c77": {
+   "name": "65-redisout.js",
+   "types": [
+    "redis out"
+   ],
+   "enabled": true
+  },
+  "ddbcf21e0e0a71293d10fa67fc850de4119edd8b": {
+   "name": "66-mongodb.js",
+   "types": [
+    "mongodb",
+    "mongodb out",
+    "mongodb in"
+   ],
+   "enabled": true
+  },
+  "faf5a891622bb82140f2fd3a648fa644921df933": {
+   "name": "json-db-node-red:json-db",
+   "types": [
+    "DataIn",
+    "DataOut",
+    "json-db-collection"
+   ],
+   "enabled": true,
+   "module": "json-db-node-red"
+  },
+  "ef3e5d55a3ddf9ba57f11fc575cc3708f4288b95": {
+   "name": "node-red-contrib-async:async",
+   "types": [
+    "async"
+   ],
+   "enabled": true,
+   "module": "node-red-contrib-async"
+  },
+  "524c156e2a509b27862ef247762defbee11f1463": {
+   "name": "node-red-contrib-coffeescript:coffeescript",
+   "types": [
+    "coffee"
+   ],
+   "enabled": true,
+   "module": "node-red-contrib-coffeescript"
+  },
+  "e079f446d624d66b3ce8b2cb23646c93d51c29b1": {
+   "name": "node-red-contrib-collector:collector",
+   "types": [
+    "collector"
+   ],
+   "enabled": true,
+   "module": "node-red-contrib-collector"
+  },
+  "b117e1c5dccf92fba4e35f9d9e83cb871ba54e2f": {
+   "name": "node-red-contrib-jsonpath:jsonpath",
+   "types": [
+    "jsonpath"
+   ],
+   "enabled": true,
+   "module": "node-red-contrib-jsonpath"
+  },
+  "687eb61cd18a96846d26146eb327d75346fb694a": {
+   "name": "node-red-contrib-neo4j:neo4j",
+   "types": [
+    "neo4j"
+   ],
+   "enabled": true,
+   "module": "node-red-contrib-neo4j"
+  },
+  "ced5d218c31d25919be3adf4c455ae65eee9c1c4": {
+   "name": "node-red-contrib-splitter:splitter",
+   "types": [
+    "splitter"
+   ],
+   "enabled": true,
+   "module": "node-red-contrib-splitter"
+  },
+  "da420163295965de9cdb32cf456eb310e6b3b101": {
+   "name": "node-red-contrib-teslams:teslams",
+   "types": [
+    "login",
+    "command",
+    "lock",
+    "sunroof",
+    "charger",
+    "charge-range",
+    "climate",
+    "set-temp"
+   ],
+   "enabled": true,
+   "module": "node-red-contrib-teslams"
+  },
+  "046b611bc90ff94d4ed42fbddd1e23725eb2d85b": {
+   "name": "node-red-iced-coffeescript:iced-coffeescript",
+   "types": [
+    "iced-coffeescript"
+   ],
+   "enabled": true,
+   "module": "node-red-iced-coffeescript"
+  },
+  "3a661896bbbd8fb52e5e97c1f28fa6a020ef7c09": {
+   "name": "node-red-node-prowl:prowl",
+   "types": [
+    "prowl"
+   ],
+   "enabled": true,
+   "module": "node-red-node-prowl"
+  },
+  "e2f43db32237d129e42630aca8fe7a818e069710": {
+   "name": "node-red-node-random:random",
+   "types": [
+    "random"
+   ],
+   "enabled": true,
+   "module": "node-red-node-random"
+  },
+  "9b5dc190b6f5ff6951c2cde1ae0fe2fa7a8de401": {
+   "name": "node-red-node-twilio:twilio",
+   "types": [
+    "twilio out",
+    "twilio-api"
+   ],
+   "enabled": true,
+   "module": "node-red-node-twilio"
+  },
+  "ae5d0aa581dd7e3b6baee557419bf49ae6f28892": {
+   "name": "node-red-node-web-nodes:aws",
+   "types": [
+    "aws-config"
+   ],
+   "enabled": true,
+   "module": "node-red-node-web-nodes"
+  },
+  "d737fe20d567b81f4e6b6b8313b5b8ec78f95d53": {
+   "name": "node-red-node-web-nodes:s3",
+   "types": [
+    "amazon s3 out"
+   ],
+   "enabled": true,
+   "module": "node-red-node-web-nodes"
+  },
+  "5c42257406bb8fc958339d808331c21d3d807b5b": {
+   "name": "node-red-node-web-nodes:pinboard",
+   "types": [
+    "pinboard-user",
+    "pinboard out"
+   ],
+   "enabled": true,
+   "module": "node-red-node-web-nodes"
+  },
+  "b7812eb30bbde9acc4c9b27f527f0b73ba1be937": {
+   "name": "node-red-node-web-nodes:flickr",
+   "types": [
+    "flickr-credentials",
+    "flickr out"
+   ],
+   "enabled": true,
+   "module": "node-red-node-web-nodes"
+  },
+  "5160b422f72d20292085628a71dd927be95e226d": {
+   "name": "node-red-node-web-nodes:dropbox",
+   "types": [
+    "dropbox-config",
+    "dropbox out"
+   ],
+   "enabled": true,
+   "module": "node-red-node-web-nodes"
+  },
+  "39cc6b4ba2dde00d4005bdb8afddb546d975871f": {
+   "name": "thethingbox-node-timestamp:timestamp",
+   "types": [
+    "timestamp"
+   ],
+   "enabled": true,
+   "module": "thethingbox-node-timestamp"
+  }
+ }
+}

@@ -1,0 +1,10 @@
+{
+  "version": 3,
+  "file": "training-doc.js",
+  "sourceRoot": "",
+  "sources": [
+    "training-doc.coffee"
+  ],
+  "names": [],
+  "mappings": ";AAAA;AAAA,EAAA,MAAM,CAAC,OAAP,GAAiB,SAAC,QAAD,GAAA,CAAjB,CAAA;AAAA"
+}
