@@ -29,5 +29,13 @@
   "trainingDoc": {
     "dataSource": "db",
     "public": true
+  },
+  "say": {
+    "dataSource": "db",
+    "public": true
+  },
+  "Action": {
+    "dataSource": null,
+    "public": true
   }
 }

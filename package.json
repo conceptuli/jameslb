@@ -112,7 +112,14 @@
     "dust": "^0.3.0",
     "loopback-component-oauth2": "^1.0.0",
     "connect-ensure-login": "^0.1.1",
-    "connect": "^3.3.3"
+    "connect": "^3.3.3",
+    "strong-arc": "git+https://github.com/strongloop/strong-arc.git",
+    "cookie-parser": "^1.3.3",
+    "shortr": "0.0.1",
+    "strong-remoting": "^2.9.0",
+    "yotta": "^0.1.10",
+    "node-persist": "0.0.2",
+    "footon": "^0.3.11"
   },
   "optionalDependencies": {
     "loopback-explorer": "^1.1.0"

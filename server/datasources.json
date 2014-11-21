@@ -4,6 +4,9 @@
     "connector": "memory"
   },
   "neoRest": {
+    "host": "http://localhost",
+    "port": 7474,
+    "database": "/db/data",
     "name": "neoRest",
     "connector": "rest"
   }

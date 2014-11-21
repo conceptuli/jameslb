@@ -1,23 +1,22 @@
 {
   "name": "trainingDoc",
   "plural": "trainingDocs",
-  "base": "PersistedModel",
+  "base": "Model",
   "strict": false,
   "idInjection": false,
   "properties": {
     "classifier": {
       "type": "string",
-      "id": true,
-      "required": true,
-      "index": true
+      "id": true
+
     },
     "phrase": {
       "type": "string",
-      "required": true
+      "required": false
     },
-    "value": {
+    "type": {
       "type": "string",
-      "required": true
+      "required": false
     }
   },
   "validations": [],
