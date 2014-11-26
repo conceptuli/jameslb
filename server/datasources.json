@@ -3,11 +3,25 @@
     "name": "db",
     "connector": "memory"
   },
-  "neoRest": {
-    "host": "http://localhost",
-    "port": 7474,
-    "database": "/db/data",
-    "name": "neoRest",
-    "connector": "rest"
+  "tts": {
+    "name": "tts",
+    "connector": "rest",
+    "operations": [
+      {
+        "template": {
+          "method": "GET",
+          "url": "http://localhost:3000/tts?phrase={phrase}",
+          "headers": {
+            "Content-type": "application/json"
+          }
+
+        },
+        "functions": {
+          "sayThis": [
+            "phrase"
+          ]
+        }
+      }
+    ]
   }
 }

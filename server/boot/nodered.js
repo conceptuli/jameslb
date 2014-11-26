@@ -18,7 +18,7 @@
 
   settings = {
     httpAdminRoot: '/extend',
-    httpNodeRoot: 'red',
+    httpNodeRoot: '/api',
     userDir: '/home/brian/WebstormProjects/jameslb/noderedHome',
     functionGlobalContext: {}
   };
@@ -35,4 +35,4 @@
 
 }).call(this);
 
-//# sourceMappingURL=mw_require.js.map
+//# sourceMappingURL=nodered.js.map

@@ -26,16 +26,12 @@
     "dataSource": "db",
     "public": false
   },
-  "trainingDoc": {
-    "dataSource": "db",
-    "public": true
-  },
   "say": {
     "dataSource": "db",
     "public": true
   },
-  "Action": {
-    "dataSource": null,
+  "speak": {
+    "dataSource": "tts",
     "public": true
   }
 }

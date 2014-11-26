@@ -34,11 +34,12 @@
         headers: options.headers,
         form: formData
       }, function(error, response, body) {
-        var data;
+        var bodyLink;
         body = extractValues(JSON.stringify(response), "var myPhpVar = '{link}\';");
-        body = body.link;
-        data = body;
-        return res.send(data);
+        bodyLink = body.link;
+        return res.json({
+          "speak": bodyLink
+        });
       });
     });
   };

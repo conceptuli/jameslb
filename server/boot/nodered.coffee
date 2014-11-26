@@ -11,7 +11,7 @@ server = http.createServer(app)
 
 settings =
   httpAdminRoot: '/extend'
-  httpNodeRoot: 'red'
+  httpNodeRoot: '/api'
   userDir:'/home/brian/WebstormProjects/jameslb/noderedHome'
   functionGlobalContext: {}
 

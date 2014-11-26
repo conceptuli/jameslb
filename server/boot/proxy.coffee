@@ -27,7 +27,9 @@ module.exports = (app) ->
       form: formData
       , (error, response, body) ->
         body = extractValues JSON.stringify(response), "var myPhpVar = '{link}\';"
-        body = body.link
+        bodyLink = body.link
 
-        data = body
-        res.send data
+
+
+        res.json
+          "speak": bodyLink

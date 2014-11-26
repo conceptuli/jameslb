@@ -1,1 +1,0 @@
-{"filename":"foo.json","collections":[{"name":"test","data":[],"idIndex":[],"binaryIndices":{},"objType":"test","transactional":false,"cachedIndex":null,"cachedBinaryIndex":null,"cachedData":null,"maxId":0,"DynamicViews":[],"events":{"insert":[null],"update":[null],"close":[],"flushbuffer":[],"error":[],"delete":[]}}],"events":{"close":[]},"ENV":"NODEJS","fs":{}}
