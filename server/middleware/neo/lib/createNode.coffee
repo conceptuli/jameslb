@@ -1,3 +1,10 @@
+###
+  CreateGraphNode 'type', properties object
+
+  returns object with label and properties
+(c) 2014 Conceptuli, LLC
+  Author: Brian Bagdasarian brian (at) conceptu.li
+  ###
 
 
 class CreateType
@@ -10,12 +17,6 @@ class CreateType
     return type
 
 
-###
-  CreateGraphNode 'type', properties object
-
-  returns object with label and properties
-
-  ###
 
 class Properties
   constructor: (type) ->
