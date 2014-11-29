@@ -3,14 +3,19 @@
 class CreateType
   constructor: (@type, properties={}) ->
     @label = @type.toUpperCase()
-    type =
+    @type.properties = properties
+    @type = {
       typeName: @type
-      type: @label
-      properties: {}
-    return type
+      label: @label
+      properties
+    }
+    @rels
+
+    return @type
+
 
 class Properties
-  constructor: (type) ->
+  constructor: (@type) ->
     console.log type
     @type = type
   addProp: (k,v) ->
@@ -18,12 +23,43 @@ class Properties
 
 
 
-x = new CreateType 'foo'
-console.log x
-y = new Properties x
-y.addProp 'x','d'
-console.log y
+
+class Create
+  constructor: (@type, properties={}) ->
+    @graphNode = new CreateType @type, properties
+  addProperty: (k,v) ->
+    @type.properties[k]=v
+
+module.exports = Create
 ###
+
+X = new Create 'foo', properties={name:'ff', age: '12'}
+console.log X
+###
+
+
+###
+class CreateType2
+  constructor: (@type, properties={}) ->
+    @label = @type.toUpperCase()
+    type =
+      typeName: @type
+      label: @label
+      properties: {}
+    return type
+    @addProp= (k,v, type) ->
+      @type = type
+      y = @type.properties[k] = v
+
+
+
+x = new CreateType2 'foo', properties = {}
+console.log x
+x.addProp 'd', 'd'
+console.log x
+
+
+
 CreateGraphNode = (type, props) ->
   @type = new CreateType "#{type}"
   x = new Properties @type
@@ -33,13 +69,12 @@ CreateGraphNode = (type, props) ->
 
 props =
   name: 'brian'
-  age: '12'###
+  age: '12'
+
+foo = CreateGraphNode 'foo', props
 
 
-###foo = CreateGraphNode 'foo', props###
-
-
-###Foo = new CreateType 'foo'
+Foo = new CreateType 'foo'
 console.log Foo
 
 Bar = new Properties Foo
