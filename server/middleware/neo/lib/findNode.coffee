@@ -11,4 +11,4 @@ findNode.all = (predicate={}) ->
     else console.log results
 
 
-module.exports findNode
+module.exports = findNode
