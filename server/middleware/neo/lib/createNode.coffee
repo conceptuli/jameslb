@@ -25,8 +25,13 @@ class Properties
 
 
 class Create
-  constructor: (@type, properties={}) ->
+  constructor: (@properties={}) ->
+
+
+    @type = properties.type
+    @uuid = properties.uuid = require('node-uuid').v4()
     @graphNode = new CreateType @type, properties
+
   addProperty: (k,v) ->
     @type.properties[k]=v
 

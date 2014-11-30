@@ -2,7 +2,7 @@ BrainDB = require('seraph')('http://localhost:7474')
 node = require('./createNode.coffee')
 s = require 'seraph'
 
-exports.readNode = (nodeId) ->
+readNode = (nodeId) ->
   node = {}
   node.id=nodeId
   BrainDB.read node.id, (err,node) ->
@@ -10,7 +10,7 @@ exports.readNode = (nodeId) ->
     return node
 
 
-exports.readNode.where = (nodeId, nodePropVal) ->
+readNode.where = (nodeId, nodePropVal) ->
   node = {}
   node.id=nodeId
   BrainDB.read node.id, nodePropVal, (err,answer) ->
@@ -19,3 +19,4 @@ exports.readNode.where = (nodeId, nodePropVal) ->
     }
     console.log nodeJSON
     return  nodeJSON
+module.exports = readNode
