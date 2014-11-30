@@ -3,7 +3,8 @@ node = require('./createNode.coffee')
 s = require 'seraph'
 
 delNode = (nodeId, nodePropVal) ->
-  np = node.nodePropVal
-  node.id = nodeId
+  node = {
+    nodePropVal
+  }
   BrainDB.delete node.id or np, (err) ->
     if not err then console.log 'that worked '

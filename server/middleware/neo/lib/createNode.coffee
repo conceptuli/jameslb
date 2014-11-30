@@ -1,9 +1,10 @@
 
+###
 
 class CreateType
-  constructor: (@type, properties={}) ->
-    @label = @type.toUpperCase()
-    @type.properties = properties
+  constructor: (type, properties={}) ->
+    @label = type.toUpperCase()
+    @properties = properties
     @type = {
       typeName: @type
       label: @label
@@ -22,20 +23,26 @@ class Properties
     @type.properties[k] = v
 
 
+###
 
 
 class Create
   constructor: (@properties={}) ->
 
 
-    @type = properties.type
-    @uuid = properties.uuid = require('node-uuid').v4()
-    @graphNode = new CreateType @type, properties
+    @type = @properties.type.toUpperCase()
+    @uuid = @properties.uuid = require('node-uuid').v4()
+    return @graphNode = {
+      @type
+      properties
+    }
 
   addProperty: (k,v) ->
     @type.properties[k]=v
 
 module.exports = Create
+
+
 ###
 
 X = new Create 'foo', properties={name:'ff', age: '12'}
