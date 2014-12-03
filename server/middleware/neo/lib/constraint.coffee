@@ -36,4 +36,4 @@ constraint.listOnLabel = (label) ->
     else console.log constraints
     return constraints
 
-constraint.create( 'Person', 'sex')
+module.exports = constraint

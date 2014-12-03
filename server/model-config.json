@@ -33,5 +33,17 @@
   "speak": {
     "dataSource": "tts",
     "public": true
+  },
+  "neoTest": {
+    "dataSource": "neo",
+    "public": true
+  },
+  "classifier": {
+    "dataSource": null,
+    "public": true
+  },
+  "container": {
+    "dataSource": "localStorage",
+    "public": true
   }
 }

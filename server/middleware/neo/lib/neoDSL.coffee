@@ -1,17 +1,22 @@
+log = console.log
+###
 
+BrainDB = require('seraph')('http://localhost:7474')
+ev = require 'extract-values'
+cypher = ''
 
-###rule = []
-make = ->
-  a = "CREATE"
-  rule.push a
-
-constraint = ->
-  b = "CONSTRAINT ON"
-  rule.push b
-
-index = ->
-  b = "INDEX ON"
-  rule.push b###
+cs = []
+go = BrainDB.query cypher, id, (err, result) ->
+  if err then throw err
+  else result
 
 
 
+
+phrase = ''
+readPhrase = (@phrase, vars) =>
+  varBase = ev(@phrase, "")
+###
+
+nlp = require './peTest'
+log nlp.getParsedTree('where is John')

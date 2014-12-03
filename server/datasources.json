@@ -14,7 +14,6 @@
           "headers": {
             "Content-type": "application/json"
           }
-
         },
         "functions": {
           "sayThis": [
@@ -23,5 +22,57 @@
         }
       }
     ]
+  },
+  "extend": {
+    "name": "extend",
+    "connector": "rest",
+    "operations": [
+      {
+        "template": {
+          "method": "GET",
+          "url": "http://localhost:4000/extend",
+          "headers": {
+            "Content-type": "application/json"
+          }
+        },
+        "functions": {
+          "test": []
+        }
+      }
+    ]
+  },
+  "neo": {
+    "name": "neo",
+    "connector": "rest",
+    "operations": [
+      {
+        "template": {
+          "method": "POST",
+          "url": "http://localhost:7474/db/data/transaction/commit",
+          "headers": {
+            "Content-type": "application/json"
+          },
+          "statements": [
+            {
+              "statement": "{statement}",
+              "resultDataContents": [
+                "REST"
+              ]
+            }
+          ]
+        },
+        "functions": {
+          "test": [
+            "statement"
+          ]
+        }
+      }
+    ]
+  },
+  "localStorage": {
+    "name": "localStorage",
+    "connector": "loopback-component-storage",
+    "provider": "filesystem",
+    "root": "./server/storage"
   }
 }
