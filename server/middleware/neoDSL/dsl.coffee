@@ -14,31 +14,28 @@ randomString = (len, charSet) ->
 class Node
   constructor: ->
     require('node-uuid')
-    @properties =
+    @node =
       method: 'CREATE'
       type: 'Thing'
-      params: {}
+      properties: {}
       uuid: uuid.v4()
 
+
   type: (newType) ->
-    @properties.type = newType
+    node.type = newType
     @
 
-  params: (newParams={}) ->
-
-    param = for k,v of newParams
+  properties: (props) ->
+    @prop = for k,v of props
       "#{k}:\"#{v}\""
-    pt = param.join ", "
-
-
-
-    @properties.params = pt.toString()
+    @node.properties = @prop.join ", "
     @
 
-  method: (newMethod) ->
-    @properties.method = newMethod
-    @
+  createMethod: (newMethod) ->
+    @node.method = newMethod
+    this
 
+###
   build: ->
     console.log @properties
     method = @properties.method
@@ -47,12 +44,8 @@ class Node
     id = randomString(4, 'abcdefghijklmnopqrstuvwxyz')
     console.log "#{method} (#{id}:#{label} {#{params}}) return #{id}"
     @
+###
 
 
 
-x = new Node().params({name:'bird2'})
-console.log x.build()
-
-
-y = new Node().params({name:'bird'})
-console.log y.build()
+console.log x = new Node().properties({name:'test', sex:'male'}).createMethod('MERGE')
